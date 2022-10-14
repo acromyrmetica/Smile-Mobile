@@ -1,0 +1,231 @@
+
+/*** GLOBALS ***/
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    
+    /** Sections **/
+
+        .accent {
+            background-color: var(--hot-pink);
+            color: white;
+        }
+
+        .plain {
+            background-color: white;
+        }
+
+    /** Headings **/
+
+        h1, h2, h3 {
+            font-weight: 900;
+        }
+
+    /** Color Palette **/
+        :root {
+            --coral: #ef8172;
+            --hot-pink: #ff4c68;
+            --gray: #8f8f8f; 
+            --white: #ffffff;
+        }
+
+    
+/*** TITLE ***/
+    
+    #title {
+        padding: 3% 15% 7%;
+    }
+    
+    /** Nav Bar **/
+        #title nav {
+            padding: 0 0 4rem;
+        }
+        /* Brand Name */
+            .navbar-brand {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 2rem;
+                font-weight: 900;
+            }
+        /* Individual Menu Options */
+            #title li {
+                font-size: 1.2rem;
+                font-weight: 100;
+                padding: 0 18px;
+            }
+
+    /** Text Content **/
+        #title h1 {
+            font-size: 3.5rem;
+            line-height: 1.5;
+            position: relative;
+            text-align: left;
+            z-index: 2;
+        }
+
+    /** Download Buttons **/
+        #title a {
+            margin: 5% 3% 5% 0;
+        }
+
+    /** Phone Image **/
+        #title img {
+            margin: auto;
+            position: relative;
+            transform: rotate(25deg);
+            width: 80%;
+            z-index: 1;
+        }
+
+
+/*** FEATURES ***/
+
+    #features {
+        padding: 5%;
+        position: relative;
+        z-index: 2;
+    }
+
+    /** FA Icons **/
+        #features span {
+            color: var(--coral);
+            margin: 1.5rem;
+        }
+        /* FA Icons - Hover State */
+            #features span:hover {
+                color: var(--hot-pink);
+            }
+    
+    /** Text Content **/
+        #features h3 {
+            font-size: 1.5rem;
+        }
+        #features p {
+            color: var(--gray);
+            padding: 5%;
+        }
+
+
+/*** TESTIMONIALS ***/
+
+    #testimonials {
+        background-color: var(--coral);
+        margin-top: 4rem;
+    }
+
+    /** Individual Carousel Slides **/
+        .carousel-item {
+            padding: 7% 15%;
+        }
+        /* Slide Text */
+            #testimonials h2 {
+                font-size: 3rem;
+                line-height: 1.5;
+            }
+        /* Slide Images */
+            #testimonials img {
+                border-radius: 100%;
+                margin: 20px;
+                width: 10%;
+            }
+
+
+/*** PRESS ***/
+
+    #press {
+        background-color: var(--coral);
+        padding-bottom: 3%;
+    }
+
+    /** Press Logos **/
+        #press img {
+            margin: 20px 20px 50px;
+            width: 15%;
+        }
+
+
+/*** PRICING ***/
+
+    #pricing {
+        padding: 5rem;
+    }
+
+    /** Text Content **/
+        #pricing h2, p {
+            margin-bottom: 2rem;
+        }
+
+    /** Individual Cards **/
+        .pr-col {
+            padding: 3% 2%; 
+        }
+
+
+/*** Call To Action ***/
+
+    #cta {
+        padding: 4rem;
+        
+    }
+
+    /* Text Content */
+        #cta h3 {
+            font-size: 3.5rem;
+            padding: 3.5rem;
+        }
+
+    /* Download Buttons */
+        #cta a {
+            margin: 0.5rem;
+        }
+
+
+/*** FOOTER ***/
+
+    #footer {
+        padding: 3rem;
+    }
+    
+    /** Socials Links **/
+        #footer a {
+            color: inherit;
+            margin: 1rem;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        /* Socials Links - Hover State */
+            #footer a:hover {
+                color: var(--coral);
+            }
+
+    /** Copyright **/    
+        #footer p {
+            color: var(--gray);
+        }    
+        
+
+/*** MEDIA QUERIES ***/
+
+    /** MQ in TITLE **/
+        /* Straightens phone image on smaller screens */
+            @media (max-width: 770px) {
+                #title img {
+                    transform: rotate(0deg);
+                }
+            }
+        /* Centers title heading on smaller screens */
+            @media (max-width: 1028px) {
+                #title h1 {
+                    text-align: center;
+                }
+            }
+
+    /** MQ in CTA **/
+        /* Adjusts empty space on smaller screens */
+            @media (max-width: 900px) {
+                #cta h3 {
+                    margin-bottom: 3.5rem;
+                    padding: 0.5rem;
+                }
+            }
